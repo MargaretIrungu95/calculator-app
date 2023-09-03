@@ -1,38 +1,48 @@
+body {
+  background-image: radial-gradient(circle, #FCCF31 0%, #F55555 100%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
 .App {
-  text-align: center;
+ padding-left: 45%;
+ padding-top: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btnWrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-gap: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resultDisplay {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#7b4397 , #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calcButtons {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  color:  rgb(128, 4, 128);
+  border-radius: 15px;
+  padding: 10px 10px;
+  background-color: lightyellow;
+  transition: transform 0.3s;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.calcButtons:hover {
+  cursor: pointer;
+  animation: bubble 0.4s ease-out;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
